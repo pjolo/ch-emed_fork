@@ -1,0 +1,18 @@
+Instance: dosage-example
+InstanceOf: CHMEDMedicationStatementCard
+Title: "Posology"
+Description: "Example of a Dosage - eMedication Plan ChMed Posology Example"
+Usage: #example
+* contained = medication
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:ed4f417e-2488-4588-b172-c394bde1d60e"
+* status = #active
+* medicationReference.reference = "#medication"
+* subject = Reference(MonikaWegmueller)
+
+
+* dosage[baseEntry][+].extension[+].url = "http://pjolo/cm-emed_fork/StructureDefinition/chmed-posology-detail-object-type"
+* dosage[baseEntry][=].extension[=].valueCoding = $chmed-cs-posology-detail-object-type#1 "Daily"
+* dosage[baseEntry][=].timing.repeat.when[+] = #MORN
+* dosage[baseEntry][=].timing.repeat.when[+] = #EVE
+* dosage[baseEntry][=].doseAndRate.doseQuantity = 1 '{Piece}' "Piece"
