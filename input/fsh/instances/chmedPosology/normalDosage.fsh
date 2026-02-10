@@ -1,5 +1,5 @@
 Instance: dosage-example
-InstanceOf: CHMEDMedicationStatementCard
+InstanceOf: CHEMEDMedicationStatementCard
 Title: "Posology"
 Description: "Example of a Dosage - eMedication Plan ChMed Posology Example"
 Usage: #example
@@ -12,7 +12,7 @@ Usage: #example
 
 
 * dosage[baseEntry][+].extension[+].url = "http://pjolo/cm-emed_fork/StructureDefinition/chmed-posology-detail-object-type"
-* dosage[baseEntry][=].extension[=].valueCoding = $chmed-cs-posology-detail-object-type#1 "Daily"
+* dosage[baseEntry][=].extension[=].valueCoding = $chmed-vs-posology-detail-object-type#1 "Daily"
 * dosage[baseEntry][=].timing.repeat.when[+] = #MORN
 * dosage[baseEntry][=].timing.repeat.when[+] = #EVE
 * dosage[baseEntry][=].doseAndRate.doseQuantity = 1 '{Piece}' "Piece"
