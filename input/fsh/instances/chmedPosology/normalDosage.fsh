@@ -3,7 +3,7 @@ InstanceOf: CHEMEDMedicationStatementCard
 Title: "Posology"
 Description: "Example of a Dosage - eMedication Plan ChMed Posology Example"
 Usage: #example
-// * contained = medication
+* contained = medication
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:ed4f417e-2488-4588-b172-c394bde1d60e"
 * status = #active
