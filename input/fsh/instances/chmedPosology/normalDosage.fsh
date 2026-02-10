@@ -10,6 +10,8 @@ Usage: #example
 * medicationReference.reference = "#medication"
 * subject = Reference(MonikaWegmueller)
 
+* dateAsserted = "2011-11-29T11:00:00+01:00"
+* informationSource.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
 
 * dosage[baseEntry][+].extension[+].url = "http://pjolo/cm-emed_fork/StructureDefinition/chmed-posology-detail-object-type"
 * dosage[baseEntry][=].extension[=].valueCoding = $chmed-vs-posology-detail-object-type#1 "Daily"
