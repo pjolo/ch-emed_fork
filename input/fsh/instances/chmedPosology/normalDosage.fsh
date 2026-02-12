@@ -31,7 +31,11 @@ Usage: #example
 
 // ZWEITES Dosage Element (sequence 2): Abend-Dosis
 * dosage[+].sequence = 2
+* dosage[=].timing.repeat.boundsPeriod.start = "2024-02-12"
 * dosage[=].timing.repeat.when = #EVE
+* dosage[=].route.coding.system = "urn:oid:0.4.0.127.0.16.1.1.2.1"
+* dosage[=].route.coding.code = #20053000
+* dosage[=].route.coding.display = "Oral use"
 * dosage[=].doseAndRate.doseQuantity = 2 '{Piece}' "Piece"
 * dosage[=].doseAndRate.doseQuantity.system = "http://snomed.info/sct"
 * dosage[=].doseAndRate.doseQuantity.code = #732936001
