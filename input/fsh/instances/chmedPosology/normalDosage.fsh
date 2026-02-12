@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:ed4f417e-2488-4588-b172-c394bde1d60e"
 * status = #active
 * medicationReference.reference = "#Beloczok"
-* subject = "Patient/MonikaWegmueller"
+* subject.reference = "Patient/MonikaWegmueller"
 
 * dateAsserted = "2011-11-29T11:00:00+01:00"
 * informationSource.reference = "PractitionerRole/FamilienHausarztAtHausarzt"
