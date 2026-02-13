@@ -18,26 +18,22 @@ Usage: #example
 * dosage[baseEntry][=].extension[=].valueCoding = $chmed-vs-posology-detail-object-type#1 "Daily"
 
 // ERSTES Dosage Element (sequence 1): Morgen-Dosis mit gemeinsamen Informationen
-* dosage[+].sequence = 1
-* dosage[=].timing.repeat.boundsPeriod.start = "2024-02-12"
-* dosage[=].timing.repeat.when = #MORN
-* dosage[=].route.coding.system = "urn:oid:0.4.0.127.0.16.1.1.2.1"
-* dosage[=].route.coding.code = #20053000
-* dosage[=].route.coding.display = "Oral use"
-* dosage[=].doseAndRate.doseQuantity = 1.5 '{Piece}' "Piece"
-* dosage[=].doseAndRate.doseQuantity.system = "http://snomed.info/sct"
-* dosage[=].doseAndRate.doseQuantity.code = #732936001
-* dosage[=].doseAndRate.doseQuantity.unit = "Tablet (unit of presentation)"
+* dosage[baseEntry].sequence = 1
+* dosage[baseEntry].timing.repeat.boundsPeriod.start = "2024-02-12"
+* dosage[baseEntry].timing.repeat.when = #MORN
+* dosage[baseEntry].route.coding.system = "urn:oid:0.4.0.127.0.16.1.1.2.1"
+* dosage[baseEntry].route.coding.code = #20053000
+* dosage[baseEntry].route.coding.display = "Oral use"
+* dosage[baseEntry].doseAndRate.doseQuantity = 1.5 '{Piece}' "Piece"
+* dosage[baseEntry].doseAndRate.doseQuantity.system = "http://snomed.info/sct"
+* dosage[baseEntry].doseAndRate.doseQuantity.code = #732936001
+* dosage[baseEntry].doseAndRate.doseQuantity.unit = "Tablet (unit of presentation)"
 
 // ZWEITES Dosage Element (sequence 2): Abend-Dosis
-* dosage[+].sequence = 2
-* dosage[=].timing.repeat.boundsPeriod.start = "2024-02-12"
-* dosage[=].timing.repeat.when = #EVE
-* dosage[=].route.coding.system = "urn:oid:0.4.0.127.0.16.1.1.2.1"
-* dosage[=].route.coding.code = #20053000
-* dosage[=].route.coding.display = "Oral use"
-* dosage[=].doseAndRate.doseQuantity = 2 '{Piece}' "Piece"
-* dosage[=].doseAndRate.doseQuantity.system = "http://snomed.info/sct"
-* dosage[=].doseAndRate.doseQuantity.code = #732936001
-* dosage[=].doseAndRate.doseQuantity.unit = "Tablet (unit of presentation)"
+* dosage[additionalEntry].sequence = 2
+* dosage[additionalEntry].timing.repeat.when = #EVE
 
+* dosage[additionalEntry].doseAndRate.doseQuantity = 2 '{Piece}' "Piece"
+* dosage[additionalEntry].doseAndRate.doseQuantity.system = "http://snomed.info/sct"
+* dosage[additionalEntry].doseAndRate.doseQuantity.code = #732936001
+* dosage[additionalEntry].doseAndRate.doseQuantity.unit = "Tablet (unit of presentation)"
