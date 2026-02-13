@@ -19,10 +19,10 @@ Description: "Mapping von CH EMED Dosage Split zu CHMED23A eMediplan Posology Da
 * timing.repeat.when -> "ds" "Tageszeit-Array Position"
 
 // Dosis und Menge
-* doseAndRate.doseQuantity -> "Posology.Daily[x].Amount" "Dosiermenge"
-* doseAndRate.doseQuantity.value -> "Posology.Daily[x]" "Numerischer Wert der Dosis"
-* doseAndRate.doseQuantity.unit -> "Posology.U" "Einheit der Dosis"
-* doseAndRate.doseQuantity.code -> "Posology.U" "Einheit als Code"
+//* doseAndRate.doseQuantity -> "Posology.Daily[x].Amount" "Dosiermenge"
+//* doseAndRate.doseQuantity.value -> "Posology.Daily[x]" "Numerischer Wert der Dosis"
+//* doseAndRate.doseQuantity.unit -> "Posology.U" "Einheit der Dosis"
+//* doseAndRate.doseQuantity.code -> "Posology.U" "Einheit als Code"
 
 // Route (Verabreichungsweg)
 * route.coding.code -> "roa" "EDQM-Code für Verabreichungsweg"
