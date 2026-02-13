@@ -5,5 +5,5 @@ Description: "CHMED extension for the type of the posology detail objects define
 * ^context[0].type = #element
 * ^context[=].expression = "Dosage"
 * . ^short = "CHMED Posology Detail Object Type"
-* valueCoding from PosologyDetailObjectType-vs (required)
+* valueCoding from PosologyDetailObjectTypeVs (required)
 * valueCoding 1..

@@ -34,4 +34,4 @@ Description: "Definition of the split dosage (used in MedicationStatement / Medi
 // Extension für CHMED23A Posology Type
 * extension contains CHMEDPosologyDetailObjectType named posologyDetailObjectType 0..1
 * extension[posologyDetailObjectType] ^short = "CHMED23A Posology Detail Object Type"
-* extension[posologyDetailObjectType] ^definition = "Defines the type of posology (Daily, FreeText, Single, Cyclic, Sequence)
+* extension[posologyDetailObjectType] ^definition = "Defines the type of posology (Daily, FreeText, Single, Cyclic, Sequence)"
