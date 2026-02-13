@@ -25,7 +25,7 @@ Description: "Mapping von CH EMED Dosage Split zu CHMED23A eMediplan Posology Da
 * doseAndRate.doseQuantity.code -> "Posology.U" "Einheit als Code"
 
 // Route (Verabreichungsweg)
-* route.coding.code -> "roa "EDQM-Code für Verabreichungsweg"
+* route.coding.code -> "roa" "EDQM-Code für Verabreichungsweg"
 
 // Zusätzliche Posology-Felder
 * patientInstruction -> "appInstr" "Patientenanweisungen"
