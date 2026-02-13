@@ -1,4 +1,4 @@
-ValueSet: PosologyDetailObjectType
+ValueSet: PosologyDetailObjectType-vs
 Id: chmed-valueset-posology-detail-object-type
 Title: "CHMED Posology Detail Object Type"
 Description: "Value set for defining the type of the posology detail object"
@@ -10,7 +10,7 @@ Description: "Value set for defining the type of the posology detail object"
 * include codes from system PosologyDetailObjectType
 
 
-CodeSystem: PosologyDetailObjectType
+CodeSystem: PosologyDetailObjectType-cs
 Id: chmed-codesystem-posology-detail-object-type
 Title: "CHMED Posology Detail Object Type"
 Description: "Code system for defining the type of the posology detail object"
