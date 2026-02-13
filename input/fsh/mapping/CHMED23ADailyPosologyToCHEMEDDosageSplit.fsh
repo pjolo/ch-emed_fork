@@ -6,17 +6,17 @@ Title: "CHMED23A Daily Posology"
 Description: "Mapping von CH EMED Dosage Split zu CHMED23A eMediplan Posology Daily Objekt"
 
 // Posology Objekt Type
-* extension[posologyDetailObjectType] -> "Posology.Type" "Typ des Posology-Objekts"
-* extension[posologyDetailObjectType].valueCoding -> "Posology.Type = 1 (Daily)" "Daily Posology Type"
+* extension[posologyDetailObjectType] -> "PosologyDetail object type"
+* extension[posologyDetailObjectType].valueCoding -> "t" "1=Daily, 2=FreeText, 3=Single, 4=Cyclic, 5=Sequence"
 
 // Dosage Struktur
-* -> "Posology.Daily" "Daily Dosage Array"
+//* -> "Posology.Daily" "Daily Dosage Array"
 
 // Timing und Tageszeiten
-* sequence -> "Array-Position" "Dosierungsreihenfolge (implizit durch Array-Position)"
-* timing.repeat.boundsPeriod.start -> "Posology.DtFrom" "Startdatum der Dosierung"
-* timing.repeat.boundsPeriod.end -> "Posology.DtTo" "Enddatum der Dosierung"
-* timing.repeat.when -> "Posology.Daily[x]" "Tageszeit-Array Position"
+* sequence -> "ds" "Dosierungsreihenfolge (implizit durch Array-Position)"
+* timing.repeat.boundsPeriod.start -> "dtFrom" "Startdatum der Dosierung"
+* timing.repeat.boundsPeriod.end -> "dtTo" "Enddatum der Dosierung"
+* timing.repeat.when -> "ds" "Tageszeit-Array Position"
 
 // Dosis und Menge
 * doseAndRate.doseQuantity -> "Posology.Daily[x].Amount" "Dosiermenge"
@@ -25,11 +25,8 @@ Description: "Mapping von CH EMED Dosage Split zu CHMED23A eMediplan Posology Da
 * doseAndRate.doseQuantity.code -> "Posology.U" "Einheit als Code"
 
 // Route (Verabreichungsweg)
-* route -> "Posology.RoA" "Verabreichungsweg (Route of Administration)"
-* route.coding.code -> "Posology.RoA" "EDQM-Code für Verabreichungsweg"
-* route.coding.display -> "Posology.RoA" "Display-Text für Verabreichungsweg"
+* route.coding.code -> "roa "EDQM-Code für Verabreichungsweg"
 
 // Zusätzliche Posology-Felder
-* additionalInstruction -> "Posology.InRes" "Zusätzliche Anweisungen"
-* patientInstruction -> "Posology.InRes" "Patientenanweisungen"
-* asNeededBoolean -> "Posology.TT = 3" "Bei Bedarf (In Reserve)"
+* patientInstruction -> "appInstr" "Patientenanweisungen"
+* asNeededBoolean -> "inRes" "Bei Bedarf (In Reserve)"
