@@ -7,8 +7,7 @@ Description: "Value set for defining the type of the posology detail object"
 * ^contact.telecom.value = "http://www.emediplan.ch"
 * ^experimental = false
 
-* include codes from system PosologyDetailObjectType
-
+* include codes from system PosologyDetailObjectType-cs
 
 CodeSystem: PosologyDetailObjectType-cs
 Id: chmed-codesystem-posology-detail-object-type
