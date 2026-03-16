@@ -67,6 +67,8 @@ pages:
     title: Extensions
   changelog.md:
     title: Change Log
+  mapping-emediplan-chemed.md:
+    title: Mapping CHMED16A to CH EMED
 
 menu:
   Home: index.html
